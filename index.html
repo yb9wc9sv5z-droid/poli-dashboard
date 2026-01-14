@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLI - Ethical Wealth Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        header { background: white; padding: 20px; border-radius: 15px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .logo { font-size: 28px; font-weight: bold; color: #10b981; }
+        nav { display: flex; gap: 20px; }
+        .nav-btn { padding: 10px 20px; border: none; background: #f3f4f6; border-radius: 8px; cursor: pointer; font-weight: 500; }
+        .nav-btn.active { background: #10b981; color: white; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .stat-value { font-size: 32px; font-weight: bold; color: #1f2937; margin: 10px 0; }
+        .stat-change { color: #10b981; font-weight: 600; }
+        h1 { color: white; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🌱 POLI</div>
+            <nav>
+                <button class="nav-btn active">⌂ Accueil</button>
+                <button class="nav-btn">📊 Investissements</button>
+                <button class="nav-btn">📈 Trading</button>
+                <button class="nav-btn">✓ Éthique</button>
+            </nav>
+            <div>👤 POLI User</div>
+        </header>
+        
+        <h1>Dashboard Overview</h1>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div>💎 Valeur Nette Totale</div>
+                <div class="stat-value">$248,868</div>
+                <div class="stat-change">▲ +12.5%</div>
+            </div>
+            <div class="stat-card">
+                <div>📊 Investissements</div>
+                <div class="stat-value">$156,350</div>
+                <div class="stat-change">▲ +8.2%</div>
+            </div>
+            <div class="stat-card">
+                <div>💹 Trading P&L</div>
+                <div class="stat-value">$1,100</div>
+                <div class="stat-change">▲ +16.6%</div>
+            </div>
+            <div class="stat-card">
+                <div>🌿 Score Éthique</div>
+                <div class="stat-value">72/100</div>
+                <div class="stat-change">✓ Halal certified</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
